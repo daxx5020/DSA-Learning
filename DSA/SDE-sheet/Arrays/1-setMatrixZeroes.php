@@ -10,8 +10,8 @@
 //     for ($i = 0; $i < $n; $i++) {
 //         for ($j = 0; $j < $m; $j++) {
 //             if ($matrix[$i][$j] === 0) {
-//                 $this->markRow($matrix, $i, $m);
-//                 $this->markCol($matrix, $j, $n);
+//                 markRow($matrix, $i, $m);
+//                 markCol($matrix, $j, $n);
 //             }
 //         }
 //     }

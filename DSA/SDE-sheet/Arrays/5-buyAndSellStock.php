@@ -2,17 +2,17 @@
 
 
 function buyAndSellStock($arr){
-    $mini = $arr[0];
+    $max = $arr[0];
     $maxProfit = 0;
     $n = count($arr);
 
     for ($i = 0; $i < $n; $i++){
-        $cost = $arr[$i] - $mini;
+        $cost = $max - $arr[$i];
         $maxProfit = max($maxProfit, $cost);
-        $mini = min($mini,$arr[$i]);
+        $max = max($max,$arr[$i]);
     }
     return $maxProfit;
 }
 
-$arr = [1,2,3,4,5,10];
+$arr = [9, 7, 3, 6, 2];
 print_r(buyAndSellStock($arr));
